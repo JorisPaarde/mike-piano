@@ -10,17 +10,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/72709fc3c4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Mike's Pianoshow</title>
 </head>
 
 <body>
+    <!-- navigation menu -->
     <nav class="bg-dark navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand text-white align-middle" href="#">
                 <img src="assets/images/Mikes_pianoshow_logo.jpeg" alt="Mikes Pianoshow logo" width="50" height="50"
-                    class="d-inline-block align-text-middle ">
-            MIKE'S PIANOSHOW
+                    class="d-inline-block align-text-middle">
+                MIKE'S PIANOSHOW
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +34,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Video's</a>
+                        <a class="nav-link" href="#videos">Video's</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Foto's</a>
@@ -47,35 +49,223 @@
                         <a class="nav-link" href="#">Prijzen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- hero carousel -->
     <div class="container-fluid p-0">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/images/Mike_op_piano.jpg" class="d-block w-100" alt="Mike op piano maakt de show">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
+                <div class="carousel-item active">
+                    <img src="assets/images/mike_op_piano.webp" class="d-block w-100 hero-image"
+                        alt="Mike op piano maakt de show">
+                    <div class="hero-text text-white">
+                        <div class="title-wrapper p-2">
+                            <h2>MIKE'S PIANOSHOW</h2>
+                        </div>
+                        <div class="title-wrapper p-2">
+                            <p>De band met interactie op elk feest, groot of klein.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/saxofonist_in_de_zaal.webp" class="d-block w-100 hero-image"
+                        alt="Saxofonist in de zaal">
+                    <div class="hero-text text-white">
+                        <div class="title-wrapper p-2">
+                            <h2>MIKE'S PIANOSHOW</h2>
+                        </div>
+                        <div class="title-wrapper p-2">
+                            <p>De band met interactie op elk feest, groot of klein.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
     </div>
+    <div class="container">
+        <!-- korte omschrijving -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <section class="text-center text-light p-4">
+                    <h4 class="my-3">MIKE’S PIANOSHOW</h4>
+                    <hr>
+                    <h5>Een vrolijke band vol interactie met het publiek, voor uw evenement of
+                        bruiloft.</h5>
+                    <h6 class="mt-4">De Mike’s Pianoshow is een band die interactie met het publiek heeft als
+                        geen ander.</h6>
+                    <p>Dat wil zeggen dat de band het publiek zoveel mogelijk betrekt, zodat het een
+                        persoonlijk en
+                        uniek feest wordt van ons allemaal. Van de band EN het publiek. Zo kunnen uw gasten niet alleen
+                        verzoekjes indienen, er komen ook bekende meezingers langs, spontane karaoke en heel veel hits
+                        waar iedereen lekker op kan dansen. De vrolijke chemie die Michael en zijn band met de zaal
+                        hebben is uniek en heel aanstekelijk.</p>
+                </section>
+                <section class="bg-dark-grey text-center text-light p-4">
+                    <h4 class="my-3">Contact</h4>
+                    <hr>
+                    <h5 id="contact" class="mb-0">Mike’s Pianoshow op uw feest? Dat kan!</h5><br>
+                    <p class="mt-1"> Neem contact op via:</p>
+                    <a class="links mb-4" href="mailto:info@mikespianoshow.com">info@mikespianoshow.com</a>
+                </section>
+                <!-- nummers -->
+                <div class="row text-center text-light my-4">
+                    <div class="col-4">
+                        <h4>100+</h4>
+                        <p>geslaagde feestjes</p>
+                    </div>
+                    <div class="col-4">
+                        <h4>15</h4>
+                        <p>Jaar ervaring op het podium</p>
+                    </div>
+                    <div class="col-4">
+                        <h4>500+</h4>
+                        <p>nummers in het repertoire</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video sectie -->
+    <div class="container-fluid bg-dark-grey">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 text-light text-center">
+                <h4 id="videos" class="my-3 my-md-5">Video's</h4>
+                <p>Bekijk video beelden van Mike’s Pianoshow live optredens</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 mt-4">
+                <div class="video-container">
+                    <iframe class="video-iframe" src="https://www.youtube.com/embed/KwP1llYtxNI"
+                        title="Mike's pianoshow promo video" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-3 my-4">
+                <div class="video-container">
+                    <iframe class="video-iframe" src="https://www.youtube.com/embed/P1-Rjg66OYw"
+                        title="Mike's pianoshow promo video" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 my-4">
+                <div class="video-container">
+                    <iframe class="video-iframe" src="https://www.youtube.com/embed/kBUAXCkylY8"
+                        title="Mike's pianoshow promo video" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- foto sectie -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 text-light text-center">
+                <h4 id="videos" class="my-3 my-md-5">Foto's</h4>
+                <p>Bekijk de foto's van Mike’s Pianoshow live optredens</p>
+                <hr class="mb-5">
+            </div>
+        </div>
+        <div class="row g-0 justify-content-center">
+            <div class="col-12 col-md-3 m-0">
+                <img class="img-fluid" src="assets/images/Zaal_zingt_mee.JPG" alt="">
+            </div>
+            <div class="col-12 col-md-3 m-0">
+                <img class="img-fluid" src="assets/images/Zaal_zingt_mee.JPG" alt="">
+            </div>
+            <div class="col-12 col-md-3 m-0">
+                <img class="img-fluid" src="assets/images/Zaal_zingt_mee.JPG" alt="">
+            </div>
+        </div>
+        <div class="row g-0 justify-content-center">
+            <div class="col-12 col-md-3 m-0">
+                <img class="img-fluid" src="assets/images/Zaal_zingt_mee.JPG" alt="">
+            </div>
+            <div class="col-12 col-md-3 m-0">
+                <img class="img-fluid" src="assets/images/Zaal_zingt_mee.JPG" alt="">
+            </div>
+            <div class="col-12 col-md-3 m-0">
+                <img class="img-fluid" src="assets/images/Zaal_zingt_mee.JPG" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-8">
+                    <h6>About</h6>
+                    <p class="text-justify">MIKE’S PIANOSHOW:<br>
+                        <b>De band die interactie met het publiek heeft als geen ander!</b><br>
+                        Verzoekjes indienen, bekende meezingers, spontane karaoke en heel veel hits!
+                        De chemie die Michael en zijn band met de zaal
+                        hebben is uniek en heel aanstekelijk.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h6>Links</h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#videos">Video's</a>
+                        </li>
+                        <li>
+                            <a href="#">Foto's</a>
+                        </li>
+                        <li>
+                            <a href="#">Michael</a>
+                        </li>
+                        <li>
+                            <a href="#">Opdrachtgevers</a>
+                        </li>
+                        <li>
+                            <a href="#">Prijzen</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2021 Mikes piano show
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
