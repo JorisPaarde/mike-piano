@@ -63,6 +63,15 @@ body{
     height: 100%;
 }
 
+/* micheal section */
+
+.piano-background-image{
+    background-size: cover;
+    background-image: url("../images/Mikes_Pianoshow _keyboards.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* footer */
 
 .site-footer
