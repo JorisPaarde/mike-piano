@@ -44,6 +44,11 @@ body{
     background-color: rgb(37, 37, 37);
 }
 
+.icon-card{
+  background-color: rgba(58, 58, 58);
+  height: 10rem;
+}
+
 /* video section */
 
 .video-container{
