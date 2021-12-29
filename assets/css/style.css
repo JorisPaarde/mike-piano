@@ -46,8 +46,11 @@ body{
 }
 
 .icon-card{
+  height: 100%;
+}
+
+.bg-lighter-grey{
   background-color: rgba(58, 58, 58);
-  height: 10rem;
 }
 
 /* video section */
@@ -77,6 +80,19 @@ body{
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* testimonial section */
+
+.testimonial-image{
+  position: relative;
+  border-radius: 100%;
+  object-fit: cover;
+  width: 30vw;
+  height: 30vw;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 /* footer */
