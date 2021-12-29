@@ -26,7 +26,7 @@
 
 <body>
     <!-- navigation menu -->
-    <nav class="bg-dark navbar navbar-expand-lg navbar-dark">
+    <nav class="bg-dark navbar navbar-expand-lg sticky-top navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand text-white align-middle" href="#">
                 <img src="assets/images/Mikes_pianoshow_logo.jpeg" alt="Mikes Pianoshow logo" width="50" height="50"
@@ -40,7 +40,7 @@
             <div class="flex-row-reverse collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#videos">Video's</a>
@@ -65,47 +65,47 @@
         </div>
     </nav>
     <!-- hero carousel -->
-    <div class="container-fluid p-0">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/images/mike_op_piano.webp" class="d-block w-100 hero-image"
-                        alt="Mike op piano maakt de show">
-                    <div class="hero-text text-white">
-                        <div class="title-wrapper p-2">
-                            <h1>MIKE'S PIANOSHOW</h1>
+    <div class="container-fluid">
+        <div class="row" id="home">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade p-0" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/mike_op_piano.webp" class="d-block w-100 hero-image"
+                            alt="Mike op piano maakt de show">
+                        <div class="hero-text text-white">
+                            <div class="title-wrapper p-2">
+                                <h1>MIKE'S PIANOSHOW</h1>
+                            </div>
+                            <div class="title-wrapper p-2">
+                                <p>De band met interactie op elk feest, groot of klein.</p>
+                            </div>
                         </div>
-                        <div class="title-wrapper p-2">
-                            <p>De band met interactie op elk feest, groot of klein.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/saxofonist_in_de_zaal.webp" class="d-block w-100 hero-image"
+                            alt="Saxofonist in de zaal">
+                        <div class="hero-text text-white">
+                            <div class="title-wrapper p-2">
+                                <h1>MIKE'S PIANOSHOW</h1>
+                            </div>
+                            <div class="title-wrapper p-2">
+                                <p>De band met interactie op elk feest, groot of klein.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/images/saxofonist_in_de_zaal.webp" class="d-block w-100 hero-image"
-                        alt="Saxofonist in de zaal">
-                    <div class="hero-text text-white">
-                        <div class="title-wrapper p-2">
-                            <h1>MIKE'S PIANOSHOW</h1>
-                        </div>
-                        <div class="title-wrapper p-2">
-                            <p>De band met interactie op elk feest, groot of klein.</p>
-                        </div>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-    </div>
-    <div class="container">
         <!-- korte omschrijving -->
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
@@ -123,7 +123,7 @@
                         waar iedereen lekker op kan dansen. De vrolijke chemie die Michael en zijn band met de zaal
                         hebben is uniek en heel aanstekelijk.</p>
                 </section>
-                <section id="contact" class="bg-dark-grey text-center text-light p-4">
+                <section class="bg-dark-grey text-center text-light p-4">
                     <h2 class="my-3">Contact</h2>
                     <hr>
                     <h5 class="mb-0">Mike’s Pianoshow op uw feest? Dat kan!</h5><br>
@@ -147,12 +147,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- video sectie -->
-    <div class="container-fluid bg-dark-grey">
-        <div class="row justify-content-center">
+        <!-- video sectie -->
+        <div id="videos" class="row justify-content-center bg-dark-grey">
             <div class="col-12 col-md-8 text-light text-center">
-                <h2 id="videos" class="my-3 my-md-5">Video's</h2>
+                <h2 class="my-3 my-md-5">Video's</h2>
                 <hr>
                 <p class="mb-5">Bekijk video beelden van Mike’s Pianoshow live optredens</p>
             </div>
@@ -185,17 +183,15 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- mogelijkheden sectie -->
-    <div class="container-fluid mb-2">
+        <!-- mogelijkheden sectie -->
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 text-light text-center">
-                <h2 id="opdrachtgevers" class="my-3 my-md-5">Mogelijkheden</h2>
+                <h2 id="" class="my-3 my-md-5">Mogelijkheden</h2>
                 <p>Boekt u Mike’s Pianoshow op uw feest, wat krijgt u dan?</p>
                 <hr class="mb-2 mb-md-3">
             </div>
         </div>
-        <div class="row text-light justify-content-center">
+        <div class="row text-light justify-content-center mb-2">
             <div class="col-11 col-md-8 p-4">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-6 col-sm-4">
@@ -237,13 +233,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <!-- foto sectie -->
-    <div class="container-fluid mb-5">
-        <div class="row justify-content-center">
+        <!-- foto sectie -->
+        <div id="fotos" class="row justify-content-center">
             <div class="col-12 col-md-8 text-light text-center">
-                <h2 id="fotos" class="my-3 my-md-5">Foto's</h2>
+                <h2 class="my-3 my-md-5">Foto's</h2>
                 <hr>
                 <p class="mb-5">Bekijk de foto's van Mike’s Pianoshow live optredens</p>
             </div>
@@ -259,7 +252,7 @@
                 <img class="img-fluid" src="assets/images/Zaal_zingt_mee.JPG" alt="">
             </div>
         </div>
-        <div class="row g-0 justify-content-center">
+        <div class="row g-0 justify-content-center mb-5">
             <div class="col-6 col-md-3 m-0">
                 <img class="img-fluid" src="assets/images/Zaal_zingt_mee.JPG" alt="">
             </div>
@@ -270,10 +263,8 @@
                 <img class="img-fluid" src="assets/images/Zaal_zingt_mee.JPG" alt="">
             </div>
         </div>
-    </div>
-    <!-- Michael sectie -->
-    <div class="container-fluid piano-background-image h-100">
-        <div class="row justify-content-center">
+        <!-- Michael sectie -->
+        <div class="row piano-background-image h-100 justify-content-center">
             <div class="col-10 col-md-8 text-light">
                 <h2 id="michael" class="my-3 my-md-5 text-center">Michael Schuurmans</h2>
                 <hr class="mb-5">
@@ -292,9 +283,7 @@
                     neemt initiatief om de gasten te betrekken bij het feest.</p>
             </div>
         </div>
-    </div>
-    <!-- opdrachtgevers sectie -->
-    <div class="container-fluid mb-5">
+        <!-- opdrachtgevers sectie -->
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 text-light text-center">
                 <h2 id="opdrachtgevers" class="my-3 my-md-5">Opdrachtgevers</h2>
@@ -302,7 +291,7 @@
                 <hr class="mb-5">
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mb-5">
             <div class="col-11 col-md-8 bg-white p-4">
                 <div class="row g-0 align-items-center justify-content-center">
                     <div class="col-6 col-md-3 m-0">
@@ -337,8 +326,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
         <!-- Prijzen -->
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
@@ -362,7 +349,7 @@
                         techniekpartner.</p>
                     <p class="text-center">Heeft u hier vragen over, of wilt u een concrete offerte?</p>
                 </section>
-                <section class="bg-dark-grey text-center text-light p-4">
+                <section id="contact" class="bg-dark-grey text-center text-light p-4">
                     <h2 class="my-2">Contact</h2>
                     <hr>
                     <h5 class="mb-0">Mike’s Pianoshow op uw feest? Dat kan!</h5><br>
@@ -421,17 +408,18 @@
                     <p class="copyright-text">Copyright &copy; 2021 Mikes piano show
                     </p>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
+                <!-- <div class="col-md-4 col-sm-6 col-xs-12">
                     <ul class="social-icons">
                         <li><a class="facebook" href="https://nl-nl.facebook.com/michael.schuurmans"><i
                                     class="fa fa-facebook"></i></a></li>
                         <li><a class="instagram" href="https://www.instagram.com/mykeysinsta/"><i
                                     class="fa fa-instagram"></i></a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>
 </body>
+<script src="assets/js/script.js"></script>
 
 </html>
