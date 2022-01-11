@@ -90,6 +90,8 @@ body{
   object-fit: cover;
   width: 30vw;
   height: 30vw;
+  max-width: 300px;
+  max-height: 300px;
   left: 50%;
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
