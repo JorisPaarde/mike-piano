@@ -7,5 +7,6 @@ navLinks.forEach((l) => {
 });
 
 var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-    target: '#navbarNav'
+    target: '#navbarNav',
+    offset: 200
   });
