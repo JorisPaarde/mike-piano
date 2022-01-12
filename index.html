@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    <div id="home"></div>
     <!-- navigation menu -->
     <nav class="bg-dark navbar navbar-expand-lg sticky-top navbar-dark">
         <div class="container-fluid">
@@ -66,7 +67,7 @@
     </nav>
     <!-- hero carousel -->
     <div class="container-fluid">
-        <div class="row" id="home">
+        <div class="row">
             <div id="carouselExampleFade" class="carousel slide carousel-fade p-0" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item">
@@ -74,7 +75,7 @@
                             class="d-block w-100 hero-image" alt="Mike's Pianoshow verzoekjes geven">
                         <div class="hero-text text-white">
                             <div class="title-wrapper p-2">
-                                <h1>MIKE'S PIANOSHOW</h1>
+                                <h1>Mike's Pianoshow</h1>
                             </div>
                             <div class="title-wrapper p-2">
                                 <p>De band met interactie op elk feest, groot of klein.</p>
@@ -86,7 +87,7 @@
                             class="d-block w-100 hero-image" alt="Mike neemt de zaal mee">
                         <div class="hero-text text-white">
                             <div class="title-wrapper p-2">
-                                <h1>MIKE'S PIANOSHOW</h1>
+                                <h1>Mike's Pianoshow</h1>
                             </div>
                             <div class="title-wrapper p-2">
                                 <p>De band met interactie op elk feest, groot of klein.</p>
@@ -99,7 +100,7 @@
                             alt="Hoofdfoto mike's pianoshow Michael Schuurmans">
                         <div class="hero-text text-white">
                             <div class="title-wrapper p-2">
-                                <h1>MIKE'S PIANOSHOW</h1>
+                                <h1>Mike's Pianoshow</h1>
                             </div>
                             <div class="title-wrapper p-2">
                                 <p>De band met interactie op elk feest, groot of klein.</p>
@@ -112,7 +113,7 @@
                             alt="Mike's Pianoshow grote zaal kleur foto groot publiek">
                         <div class="hero-text text-white">
                             <div class="title-wrapper p-2">
-                                <h1>MIKE'S PIANOSHOW</h1>
+                                <h1>Mike's Pianoshow</h1>
                             </div>
                             <div class="title-wrapper p-2">
                                 <p>De band met interactie op elk feest, groot of klein.</p>
@@ -135,8 +136,8 @@
         <!-- korte omschrijving -->
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
-                <section class="text-center text-light p-4">
-                    <h2 class="my-3">MIKE’S PIANOSHOW</h2>
+                <section class="text-center text-light pt-4">
+                    <h2 class="my-3">Mike's Pianoshow</h2>
                     <hr>
                     <h5>Een vrolijke band vol interactie met het publiek, voor uw evenement of
                         bruiloft.</h5>
@@ -149,15 +150,8 @@
                         waar iedereen lekker op kan dansen. De vrolijke chemie die Michael en zijn band met de zaal
                         hebben is uniek en heel aanstekelijk.</p>
                 </section>
-                <section class="bg-dark-grey text-center text-light p-4">
-                    <h2 class="my-3">Contact</h2>
-                    <hr>
-                    <h5 class="mb-0">Mike’s Pianoshow op uw feest? Dat kan!</h5><br>
-                    <p class="mt-1"> Neem contact op via:</p>
-                    <a class="links mb-4" href="mailto:info@mikespianoshow.com">info@mikespianoshow.com</a>
-                </section>
                 <!-- nummers -->
-                <div class="row text-center text-light my-4">
+                <div class="row text-center text-light my-1 my-md-5">
                     <div class="col-4">
                         <h1>100+</h1>
                         <p>geslaagde feestjes</p>
@@ -382,9 +376,9 @@
             </div>
         </div>
         <!-- Michael sectie -->
-        <div class="row piano-background-image h-100 justify-content-center">
+        <div class="row piano-background-image h-100 justify-content-center" id="michael">
             <div class="col-12 col-md-8 text-light">
-                <h2 id="michael" class="my-3 my-md-5 text-center">Michael Schuurmans</h2>
+                <h2 class="my-3 my-md-5 text-center">Michael Schuurmans</h2>
                 <hr class="mb-5">
                 <h5 class="text-center">De entertainer achter Mike’s pianoshow</h5>
                 <p>Sinds 2004 is Michael Schuurmans professioneel muzikant. In 2012 studeert hij Cum Laude af aan het
@@ -402,14 +396,14 @@
             </div>
         </div>
         <!-- opdrachtgevers sectie -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="opdrachtgevers">
             <div class="col-12 col-md-8 text-light text-center">
-                <h2 id="opdrachtgevers" class="my-3 my-md-5">Opdrachtgevers</h2>
+                <h2 class="my-3 my-md-5">Opdrachtgevers</h2>
                 <p>Michael speelde al op ruim 100 bruiloften en voor onder andere de volgende bedrijven</p>
                 <hr class="mb-5">
             </div>
         </div>
-        <div class="row justify-content-center mb-5">
+        <div class="row justify-content-center mb-1 mb-md-5">
             <div class="col-11 col-md-8 bg-white p-4">
                 <div class="row g-0 align-items-center justify-content-center">
                     <div class="col-6 col-md-3 m-0">
@@ -452,25 +446,33 @@
         <!-- Prijzen -->
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
-                <section class="text-light p-4">
+                <section class="text-light p-4 text-center">
                     <h2 id="prijzen" class="my-3 text-center">Prijzen</h2>
                     <hr>
-                    <h3 class="text-center">Wat kost het om Mike’s Pianoshow in huis te halen?</h3>
-                    <h4 class="mt-4 text-center">Mike’s pianoshow boekt u al vanaf € 2250,-.</h4>
-                    <p>De band bestaat uit Michael (toetsen, bas, zang), een saxofonist, een zangeres en een drummer.
-                        Inbegrepen in deze prijs is het geluidsbedrijf voor shows tot 200 mensen. Vraag eventueel naar
-                        een extra lichtshow of grotere geluidsset bij grotere feesten.</p>
-                    <h5 class="text-center">Tweede piano entertainer:</h5>
-                    <p>Mike’s pianoshow is ook uit te breiden met een tweede piano-entertainer, voor het welbekende
-                        “duelling piano” concept, groot gemaakt door Crazy Piano’s. Michael neemt een van zijn collega
-                        piano-entertainers mee voor het beste van 2 entertainers. Het ziet er daarnaast gaaf uit als er
-                        twee vleugels tegenover elkaar op het podium staan!</p>
-                    <h6 class="text-center">U boekt een extra piano entertainer tegen kostprijs voor € 400 tot € 750,-
-                    </h6>
-                    <h5 class="text-center">Podium, DJ, dansvloer nodig?</h5>
-                    <p>Vraag naar de mogelijkheden en u krijgt een scherpe aanbieding direct ingekocht bij onze
-                        techniekpartner.</p>
-                    <p class="text-center">Heeft u hier vragen over, of wilt u een concrete offerte?</p>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-7">
+                            <h4 class="mt-4 text-center">Mike’s pianoshow boekt u al vanaf € 2250,-.</h4>
+                            <p>De band bestaat uit Michael (toetsen, bas, zang), een saxofonist, een zangeres en een
+                                drummer.
+                                Inbegrepen in deze prijs is het geluidsbedrijf voor shows tot 200 mensen. Vraag
+                                eventueel naar
+                                een extra lichtshow of grotere geluidsset bij grotere feesten.</p><br>
+                            <h4 class="text-center">Tweede piano entertainer:</h4>
+                            <p>Mike’s pianoshow is ook uit te breiden met een tweede piano-entertainer, voor het
+                                welbekende
+                                “duelling piano” concept, groot gemaakt door Crazy Piano’s. Michael neemt een van zijn
+                                collega
+                                piano-entertainers mee voor het beste van 2 entertainers. Het ziet er daarnaast gaaf uit
+                                als er
+                                twee vleugels tegenover elkaar op het podium staan!<br>
+                                U boekt een extra piano entertainer tegen kostprijs voor € 400 tot € 750,-</p>
+                            <br>
+                            <h5 class="text-center">Podium, DJ, dansvloer nodig?</h5>
+                            <p>Vraag naar de mogelijkheden en u krijgt een scherpe aanbieding direct ingekocht bij onze
+                                techniekpartner.</p>
+                            <p class="text-center">Heeft u hier vragen over, of wilt u een concrete offerte?</p>
+                        </div>
+                    </div>
                 </section>
                 <section id="contact" class="bg-dark-grey text-center text-light p-4">
                     <h2 class="my-2">Contact</h2>

@@ -2,6 +2,10 @@ body{
     background-color: rgb(31, 31, 31);
     position: relative;
 }
+/* nav */
+#videos, #fotos, #michael, #opdrachtgevers, #prijzen, #contact{
+  scroll-margin-top: 76px;
+}
 
 /* text */
 .nav-item .navlink.active{
@@ -167,24 +171,7 @@ background-color: rgb(31, 31, 31);
 {
   margin:0
 }
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
+
 .social-icons
 {
   padding-left:0;
@@ -239,16 +226,6 @@ background-color: rgb(31, 31, 31);
   background-color: rgb(221, 151, 22);
 }
 
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
-
 /* media queries */
 
 @media screen and (max-width: 400px) {
@@ -260,3 +237,37 @@ background-color: rgb(31, 31, 31);
     }
   }
 
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+    /* nav */
+  #videos, #fotos, #michael, #opdrachtgevers, #prijzen, #contact{
+    scroll-margin-top: 348px;
+  }
+
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+  @media (max-width:767px)
+  {
+    .social-icons li.title
+    {
+      display:block;
+      margin-right:0;
+      font-weight:600
+    }
+  }
+  
