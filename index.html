@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Global site tag (gtag.js) - Google Ads: 1009342547 -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1009342547"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1009342547"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -84,7 +84,7 @@
                         <a class="nav-link" href="#videos">Video's</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#fotos">Foto's</a>
+                        <a class="nav-link" href="fotos.html">Foto's</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#michael">Michael</a>
@@ -107,40 +107,17 @@
         <div class="row">
             <div id="carouselExampleFade" class="carousel slide carousel-fade p-0" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="assets/images/Mike_s Pianoshow verzoekjes geven.webp" loading="lazy" width="1400"
-                            height="900" class="d-block w-100 hero-image" alt="Mike's Pianoshow verzoekjes geven">
-                        <div class="hero-text text-white">
-                            <div class="title-wrapper p-2">
-                                <h1>Mike's Pianoshow</h1>
-                            </div>
-                            <div class="title-wrapper p-2">
-                                <p>De band met interactie op elk feest, groot of klein.</p>
-                                <p class="text-center">
-                                    <a href="mailto:info@mikespianoshow.com" class="contact-button">Contact</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/Mike_s Pianoshow foto van achter.webp" loading="lazy" width="1400"
-                            height="900" class="d-block w-100 hero-image" alt="Mike neemt de zaal mee">
-                        <div class="hero-text text-white">
-                            <div class="title-wrapper p-2">
-                                <h1>Mike's Pianoshow</h1>
-                            </div>
-                            <div class="title-wrapper p-2">
-                                <p>De band met interactie op elk feest, groot of klein.</p>
-                                <p class="text-center">
-                                    <a href="mailto:info@mikespianoshow.com" class="contact-button">Contact</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- carousel item first active lachend zww / hoofdfoto-->
                     <div class="carousel-item active">
-                        <img src="assets/images/Hoofdfoto mike_s pianoshow Michael Schuurmans.webp" width="1400"
-                            height="900" class="d-block w-100 hero-image"
-                            alt="Hoofdfoto mike's pianoshow Michael Schuurmans">
+                        <picture class="d-block">
+                            <source media="(orientation: portrait)"
+                                srcset="assets/images/portrait/mike_s_pianoshow_Michael_lachend_piano_band_pianoband_vrolijk.webp">
+                            <source media="(orientation: landscape)"
+                                srcset="assets/images/landscape/Mike_s_Pianoshow_HR_hoofdfoto.webp">
+                            <img class="w-100 hero-image"
+                                src="assets/images/landscape/Mike_s_Pianoshow_HR_hoofdfoto.webp"
+                                alt="Mike's Pianoshow hoofdfoto">
+                        </picture>
                         <div class="hero-text text-white">
                             <div class="title-wrapper p-2">
                                 <h1>Mike's Pianoshow</h1>
@@ -153,10 +130,17 @@
                             </div>
                         </div>
                     </div>
+                    <!-- carousel item howard / wetranfer-->
                     <div class="carousel-item">
-                        <img src="assets/images/Mike_s Pianoshow HR grote zaal kleur foto groot publiek.webp"
-                            loading="lazy" width="1400" height="900" class="d-block w-100 hero-image"
-                            alt="Mike's Pianoshow grote zaal kleur foto groot publiek">
+                        <picture class="d-block">
+                            <source media="(orientation: portrait)"
+                                srcset="assets/images/portrait/howard_de_zaal_in_mike_s_pianoshow.webp">
+                            <source media="(orientation: landscape)"
+                                srcset="assets/images/landscape/Mike_s_Pianoshow_webcast_webstream_liveband.webp">
+                            <img class="w-100 hero-image"
+                                src="assets/images/landscape/Mike_s_Pianoshow_webcast_webstream_liveband.webp"
+                                alt="Mike's Pianoshow webcast webstream liveband">
+                        </picture>
                         <div class="hero-text text-white">
                             <div class="title-wrapper p-2">
                                 <h1>Mike's Pianoshow</h1>
@@ -169,6 +153,76 @@
                             </div>
                         </div>
                     </div>
+                    <!-- carousel item keyboard closeup-->
+                    <div class="carousel-item">
+                        <picture class="d-block">
+                            <source media="(orientation: portrait)"
+                                srcset="assets/images/portrait/Mike_s_Pianoshow_HR_close_up_keyboards.webp">
+                            <source media="(orientation: landscape)"
+                                srcset="assets/images/landscape/Mike_s_Pianoshow_HR_close_up_keyboards.webp">
+                            <img class="w-100 hero-image"
+                                src="assets/images/landscape/Mike_s_Pianoshow_HR_close_up_keyboards.webp"
+                                alt="Mike's Pianoshow foto van achter">
+                        </picture>
+                        <div class="hero-text text-white">
+                            <div class="title-wrapper p-2">
+                                <h1>Mike's Pianoshow</h1>
+                            </div>
+                            <div class="title-wrapper p-2">
+                                <p>De band met interactie op elk feest, groot of klein.</p>
+                                <p class="text-center">
+                                    <a href="mailto:info@mikespianoshow.com" class="contact-button">Contact</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carousel item bandfoto -->
+                    <div class="carousel-item">
+                        <picture class="d-block">
+                            <source media="(orientation: portrait)"
+                                srcset="assets/images/portrait/Bandfoto_Mike_s_pianoshow.webp">
+                            <source media="(orientation: landscape)"
+                                srcset="assets/images/landscape/Mike_s Pianoshow_bandfoto_4mansformatie_basisbezetting.webp">
+                            <img class="w-100 hero-image"
+                                src="assets/images/landscape/Mike_s Pianoshow_bandfoto_4mansformatie_basisbezetting.webp"
+                                alt="Mike's Pianoshow band 4 mans formatie">
+                        </picture>
+                        <div class="hero-text text-white">
+                            <div class="title-wrapper p-2">
+                                <h1>Mike's Pianoshow</h1>
+                            </div>
+                            <div class="title-wrapper p-2">
+                                <p>De band met interactie op elk feest, groot of klein.</p>
+                                <p class="text-center">
+                                    <a href="mailto:info@mikespianoshow.com" class="contact-button">Contact</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carousel item shot achter-->
+                    <div class="carousel-item">
+                        <picture class="d-block">
+                            <source media="(orientation: portrait)"
+                                srcset="assets/images/portrait/Mike_s_Pianoshow_HR_foto_van_achter.webp">
+                            <source media="(orientation: landscape)"
+                                srcset="assets/images/landscape/Mike_s_Pianoshow_HR_foto_van_achter.webp">
+                            <img class="w-100 hero-image"
+                                src="assets/images/landscape/Mike_s_Pianoshow_HR_foto_van_achter.webp"
+                                alt="Mike's Pianoshow foto van achter">
+                        </picture>
+                        <div class="hero-text text-white">
+                            <div class="title-wrapper p-2">
+                                <h1>Mike's Pianoshow</h1>
+                            </div>
+                            <div class="title-wrapper p-2">
+                                <p>De band met interactie op elk feest, groot of klein.</p>
+                                <p class="text-center">
+                                    <a href="mailto:info@mikespianoshow.com" class="contact-button">Contact</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                     data-bs-slide="prev">
@@ -221,7 +275,7 @@
             <div class="col-12 col-md-8 text-light text-center">
                 <h2 class="my-3 my-md-5">Video's</h2>
                 <hr>
-                <p class="mb-5">Bekijk video beelden van Mike’s Pianoshow live optredens</p>
+                <p class="mb-5">Bekijk hier de video beelden van Mike’s Pianoshow live optredens</p>
             </div>
         </div>
         <div class="row justify-content-center">
@@ -336,7 +390,8 @@
                             </div>
                             <div class="col-9 card-body">
                                 <h5 class="card-title">SPEELDUUR</h5>
-                                <p class="card-text">De band speelt 3 sets van 45 minuten. <br>Uiteraard aan te passen aan uw specifieke programma.</p>
+                                <p class="card-text">De band speelt 3 sets van 45 minuten. <br>Uiteraard aan te passen
+                                    aan uw specifieke programma.</p>
                             </div>
                         </div>
                     </div>
@@ -361,83 +416,76 @@
             <div class="col-12 col-md-8 text-light text-center">
                 <h2 class="my-3 my-md-5">Foto's</h2>
                 <hr>
-                <p class="mb-5">Bekijk de foto's van Mike’s Pianoshow live optredens</p>
+                <p class="mb-4">Enkele foto's van Mike’s Pianoshow live optredens. <br> Klik op een foto om onze
+                    volledige fotogallery te bekijken.</p>
             </div>
         </div>
         <div class="row g-0 justify-content-center">
-            <div class="col-12 col-md-3 m-1 m-md-2">
-                <a href="fotos.html"
-                    rel="noopener noreferrer">
+            <div class="col-12 d-none d-sm-block col-md-3 m-1 m-md-2">
+                <a href="fotos.html" rel="noopener noreferrer">
                     <img class="img-fluid mx-auto d-block" width="300" height="200"
-                        src="assets/images/howard 2 passie saxofoon scheuren mike_s pianoshow.webp" loading="lazy"
-                        alt="saxofoon scheuren mike's pianoshow">
+                        src="assets/images/landscape/300-200/Mike_s_Pianoshow_Annika_zangeres_300.webp" loading="lazy"
+                        alt="Mike's pianoshow zangeres Annika">
                 </a>
             </div>
-            <div class="col-12 d-none d-sm-block col-md-3 m-0 m-md-2">
-                <a href="fotos.html"
-                    rel="noopener noreferrer">
+            <div class="col-12 col-md-3 m-0 m-md-2">
+                <a href="fotos.html" rel="noopener noreferrer">
                     <img class="img-fluid mx-auto d-block" width="300" height="200"
-                        src="assets/images/foto licht uitbreiding en viermansband.webp" loading="lazy"
-                        alt="foto licht uitbreiding en viermansband">
-                </a>
-            </div>
-            <div class="col-12 d-none d-sm-block col-md-3 m-0 m-md-2">
-                <a href="fotos.html"
-                    rel="noopener noreferrer">
-                    <img class="img-fluid mx-auto d-block" width="300" height="200"
-                        src="assets/images/howard de zaal in mike_s pianoshow-300-200.webp" loading="lazy"
-                        alt="Saxofonist de zaal in mike's pianoshow">
-                </a>
-            </div>
-        </div>
-        <div class="row g-0 justify-content-center">
-            <div class="col-12 col-md-3 m-1 m-md-2">
-                <a href="fotos.html"
-                    rel="noopener noreferrer">
-                    <img class="img-fluid mx-auto d-block" width="300" height="200"
-                        src="assets/images/Mike_s Pianoshow HR geluidsman doet lollig.webp" loading="lazy"
-                        alt="Mike's Pianoshow geluidsman doet lollig">
-                </a>
-            </div>
-            <div class="col-12 d-none d-sm-block col-md-3 m-0 m-md-2">
-                <a href="fotos.html"
-                    rel="noopener noreferrer">
-                    <img class="img-fluid mx-auto d-block" width="300" height="200"
-                        src="assets/images/Mike_s Pianoshow publieksparticipatie publiek op podium.webp" loading="lazy"
-                        alt="Mike's Pianoshow publieksparticipatie publiek op podium">
+                        src="assets/images/landscape/300-200/Mike_s_Pianoshow_band_voor_webcast_livestream_webstream_act.webp"
+                        loading="lazy" alt="Mike's Pianoshow band voor webcast livestream webstream act">
                 </a>
             </div>
             <div class="col-12 d-none d-sm-block col-md-3 m-0 m-md-2">
                 <a href="fotos.html" rel="noopener noreferrer">
                     <img class="img-fluid mx-auto d-block" width="300" height="200"
-                        src="assets/images/mike_s pianoshow Michael lachend.webp" loading="lazy"
-                        alt="mike's pianoshow Michael lachend">
+                        src="assets/images/landscape/300-200/Mike_s_Pianoshow_bandfoto_4mansformatie_basisbezetting.webp"
+                        loading="lazy" alt="Mike's Pianoshow bandfoto 4mansformatie basisbezetting">
+                </a>
+            </div>
+        </div>
+        <div class="row g-0 justify-content-center">
+            <div class="col-12 col-md-3 m-1 m-md-2">
+                <a href="fotos.html" rel="noopener noreferrer">
+                    <img class="img-fluid mx-auto d-block" width="300" height="200"
+                        src="assets/images/landscape/300-200/Mike_s_Pianoshow_met_zangeres_en_saxofonist.webp"
+                        loading="lazy" alt="Mike's Pianoshow zangeres Britt Teeling">
+                </a>
+            </div>
+            <div class="col-12 d-none d-sm-block col-md-3 m-0 m-md-2">
+                <a href="fotos.html" rel="noopener noreferrer">
+                    <img class="img-fluid mx-auto d-block" width="300" height="200"
+                        src="assets/images/landscape/300-200/Mike_s_Pianoshow_carnaval_verzoekjes_request_songs.webp"
+                        loading="lazy" alt="Mike's Pianoshow carnaval verzoekjes request songs">
+                </a>
+            </div>
+            <div class="col-12 d-none d-sm-block col-md-3 m-0 m-md-2">
+                <a href="fotos.html" rel="noopener noreferrer">
+                    <img class="img-fluid mx-auto d-block" width="300" height="200"
+                        src="assets/images/landscape/300-200/Mike_s_Pianoshow_webcast_webstream_liveband.webp"
+                        loading="lazy" alt="Mike's Pianoshow webcast webstream liveband">
                 </a>
             </div>
         </div>
         <div class="row g-0 justify-content-center mb-5">
             <div class="col-12 col-md-3 m-1 m-md-2">
-                <a href="fotos.html"
-                    rel="noopener noreferrer">
+                <a href="fotos.html" rel="noopener noreferrer">
                     <img class="img-fluid mx-auto d-block" width="300" height="200"
-                        src="assets/images/Mike_s Pianoshow HR grote zaal kleur foto groot publiek-300-200.webp"
-                        loading="lazy" alt="Mike's Pianoshow grote zaal kleur foto groot publiek">
+                        src="assets/images/landscape/300-200/Mike_s_Pianoshow_mensen_op_het_podium_publieksinteractie.webp"
+                        loading="lazy" alt="Mike's Pianoshow mensen op het podium publieksinteractie">
                 </a>
             </div>
             <div class="col-12 col-md-3 m-1 m-md-2">
-                <a href="fotos.html"
-                    rel="noopener noreferrer">
+                <a href="fotos.html" rel="noopener noreferrer">
                     <img class="img-fluid mx-auto d-block" width="300" height="200"
-                        src="assets/images/Mike_s Pianoshow HR interactie verzoekje.webp" loading="lazy"
-                        alt="Mike's Pianoshow interactie verzoekje">
+                        src="assets/images/landscape/300-200/Mike_s_Pianoshow_HR_grote_zaal_kleur_foto_groot_publiek.webp"
+                        loading="lazy" alt="Mike's Pianoshow HR grote zaal groot publiek">
                 </a>
             </div>
             <div class="col-12 d-none d-sm-block col-md-3 m-0 m-md-2">
-                <a href="fotos.html"
-                 rel="noopener noreferrer">
+                <a href="fotos.html" rel="noopener noreferrer">
                     <img class="img-fluid mx-auto d-block" width="300" height="200"
-                        src="assets/images/mike_s pianoshow saxofonist gaat de zaal in publieks interactie.webp"
-                        loading="lazy" alt="mike's pianoshow saxofonist gaat de zaal in publieks interactie">
+                        src="assets/images/landscape/300-200/Mike_s_Pianoshow_meezingen_en_meedijnen.webp"
+                        loading="lazy" alt="Mike's Pianoshow meezingen en meedijnen">
                 </a>
             </div>
         </div>
@@ -566,7 +614,8 @@
                                 <h1>Bruiloft Ivo en Lotty</h1>
                                 <img src="assets/images/Ivo-en-Lotty.webp" loading="lazy" width="300" height="300"
                                     class="d-block testimonial-image" alt="Bruiloft Ivo en Lotty">
-                                <p class="mt-2">Hey Michael, wat een TOP feest was het zaterdagavond. We hebben enorm genoten van
+                                <p class="mt-2">Hey Michael, wat een TOP feest was het zaterdagavond. We hebben enorm
+                                    genoten van
                                     jullie en velen met ons! De mensen van de locatie gaven zelfs aan dat ze niet eerder
                                     zo’n goede band hebben gehad.<br> Veel dank, wij genieten lekker na! Groetjes Ivo en
                                     Lotty</p>
@@ -577,7 +626,8 @@
                                 <h1>Bruiloft Kicki en Joris</h1>
                                 <img src="assets/images/Kicki en Joris.webp" loading="lazy" width="300" height="300"
                                     class="d-block testimonial-image" alt="Bruiloft Kicki en Joris">
-                                <p class="mt-2">Man man man wat waren jullie leuk! Echt zo blij, iedereen was instant fan!!!!</p>
+                                <p class="mt-2">Man man man wat waren jullie leuk! Echt zo blij, iedereen was instant
+                                    fan!!!!</p>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -585,7 +635,8 @@
                                 <h1>Bruiloft Bernd en Dionne</h1>
                                 <img src="assets/images/Bernd en Dyonne 2.webp" loading="lazy" width="300" height="300"
                                     class="d-block testimonial-image" alt="Bruiloft Bernd en Dionne">
-                                <p class="mt-2">Wij vonden jullie echt helemaal geweldig! Super muziek, super gespeeld en stuk voor
+                                <p class="mt-2">Wij vonden jullie echt helemaal geweldig! Super muziek, super gespeeld
+                                    en stuk voor
                                     stuk kanjers! Echt heel erg bedankt, we hebben ook ontzettend veel complimenten
                                     gekregen van de gasten.<br>Nogmaals ontzettend bedankt voor het mede bijdragen van
                                     een geweldige dag voor ons!</p>

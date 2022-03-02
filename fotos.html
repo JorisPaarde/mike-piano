@@ -1,92 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Mike's Pianoshow De band met interactie op elk feest.</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Mike's Pianoshow De band met interactie op elk feest.</title>
 </head>
+
 <body class="bg-dark">
-    <!-- navbar -->
-    <nav class="bg-dark navbar navbar-expand-lg fixed-top navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white align-middle" href="#">
-                <img src="assets/images/Mikes_pianoshow_logo.jpeg" alt="Mikes Pianoshow logo" width="50" height="50"
-                    class="d-inline-block align-text-middle">
-                Mike's Pianoshow
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="flex-row-reverse collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../#videos">Video's</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../#fotos">Foto's</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../#michael">Michael</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../#opdrachtgevers">Opdrachtgevers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../#prijzen">Prijzen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- foto carrousel -->
-    <div id="carouselExampleControls" class="carousel slide position-absolute top-50 start-50 translate-middle w-100" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/images/Mike_s Pianoshow HR hoofdfoto.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/Mike_s Pianoshow HR groot feest veel licht.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/Mike_s Pianoshow HR handen klappen meedoen.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/Mike_s Pianoshow HR grote zaal kleur foto groot publiek.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/Mike_s Pianoshow Michael pianosolo.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/howard 2 passie saxofoon scheuren mike_s pianoshow.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/Mike_s Pianoshow publieksparticipatie publiek op podium.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/mike_s pianoshow Britt zangeres.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  <!-- navbar -->
+  <nav class="bg-dark navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white align-middle" href="#">
+        <img src="assets/images/Mikes_pianoshow_logo.jpeg" alt="Mikes Pianoshow logo" width="50" height="50"
+          class="d-inline-block align-text-middle">
+        Mike's Pianoshow
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="flex-row-reverse collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../#videos">Video's</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../#michael">Michael</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../#opdrachtgevers">Opdrachtgevers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../#prijzen">Prijzen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
+  <!-- foto carrousel -->
+  <div id="carouselExampleControls" class="carousel slide position-absolute top-50 start-50 translate-middle w-100"
+    data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/landscape/Mike's_Pianoshow_bandfoto_4mansformatie_basisbezetting.webp"
+          class="d-block w-100" alt="Mike_s Pianoshow_bandfoto_4mansformatie_basisbezetting">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_Annika_zangeres.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_Annika_zangeres">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_band_voor_webcast_livestream_webstream_act.webp"
+          class="d-block w-100" alt="Mike_s_Pianoshow_band_voor_webcast_livestream_webstream_act">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_Britt_Teeling.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_Britt_Teeling">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_carnaval_verzoekjes_request_songs.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_carnaval_verzoekjes_request_songs">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_Howard_on_sax.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_Howard_on_sax">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_HR_close_up_keyboards.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_HR_close_up_keyboards">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_HR_foto_van_achter.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_HR_foto_van_achter">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_HR_grote_zaal_kleur_foto_groot_publiek.webp"
+          class="d-block w-100" alt="Mike_s_Pianoshow_HR_grote_zaal_kleur_foto_groot_publiek">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_HR_handen_klappen_meedoen.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_HR_handen_klappen_meedoen">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_HR_hoofdfoto.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_HR_hoofdfoto">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_HR_meezingen_interactie.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_HR_meezingen_interactie">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_HR_verzoekjes_schrijven_en_lezen.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_HR_verzoekjes_schrijven_en_lezen">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_meezingen_en_meedijnen.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_meezingen_en_meedijnen">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_mensen_op_het_podium_publieksinteractie.webp"
+          class="d-block w-100" alt="Mike_s_Pianoshow_mensen_op_het_podium_publieksinteractie">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_met_zangeres_en_saxofonist.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_met_zangeres_en_saxofonist">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/mike_s_pianoshow_Michael_lachend.webp" class="d-block w-100"
+          alt="mike_s_pianoshow_Michael_lachend">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_Michael_pianosolo.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_Michael_pianosolo">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_peaky_blinders_thema.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_peaky_blinders_thema">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_Roy_Bhagwandin_on_drums.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_Roy_Bhagwandin_on_drums">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/landscape/Mike_s_Pianoshow_webcast_webstream_liveband.webp" class="d-block w-100"
+          alt="Mike_s_Pianoshow_webcast_webstream_liveband">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </body>
+
 </html>

@@ -2,18 +2,22 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
-    background-color: rgb(31, 31, 31);
-    position: relative;
+body {
+  background-color: rgb(31, 31, 31);
+  position: relative;
 }
-/* nav */
-#videos, #fotos, #michael, #opdrachtgevers, #prijzen, #contact{
+/* ----------------------------------------------------------------------------nav */
+#videos,
+#fotos,
+#michael,
+#opdrachtgevers,
+#prijzen,
+#contact {
   scroll-margin-top: 76px;
 }
 
-
 /* contact button */
-.contact-button{
+.contact-button {
   font-size: 1.5em;
   padding: 0.2em 0.5em;
   border-radius: 5px;
@@ -22,7 +26,7 @@ body{
   animation: glow 600ms infinite alternate;
 }
 
-.contact-button:hover{
+.contact-button:hover {
   color: white;
   background-color: rgb(228, 58, 15);
 }
@@ -37,15 +41,260 @@ body{
     box-shadow: 0 0 5px 5px #b6640791;
   }
 }
-/* contact-form */
-
-.contact-clean {
-  padding: 80px 0
+/* --------------------------------------------------------------hero section */
+.hero-image {
+  max-height: 100vh;
+  object-fit: cover;
+  object-position: center;
 }
 
-@media (max-width:767px) {
+.carousel-inner .carousel-item {
+  position: relative;
+  text-align: left;
+}
+
+.title-wrapper {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (orientation: landscape) {
+  .hero-text {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    transform: translate(-25%, -70%);
+  }
+}
+
+@media (orientation: portrait) {
+  .hero-text {
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    transform: translate(-35%, -75%);
+  }
+}
+
+/* colors */
+
+.bg-dark-grey {
+  background-color: rgb(37, 37, 37);
+}
+
+.icon-card {
+  height: 100%;
+}
+
+.bg-lighter-grey {
+  background-color: rgba(58, 58, 58);
+}
+
+/* video section */
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------------------------------------------------------------------michael section */
+
+.piano-background-image {
+  background-size: cover;
+  background-image: url("../images/landscape/Mike_s_Pianoshow_HR_close_up_keyboards.webp"),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ------------------------------------------------------------------testimonial section */
+
+.testimonial-image {
+  position: relative;
+  border-radius: 100%;
+  object-fit: cover;
+  width: 30vw;
+  height: 30vw;
+  max-width: 300px;
+  max-height: 300px;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* -----------------------------------------------------------------------------footer */
+
+.site-footer {
+  background-color: rgb(31, 31, 31);
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+  border-top: blanchedalmond;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+.site-footer h6 {
+  color: #737373;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer a {
+  color: #737373;
+}
+.site-footer a:hover {
+  color: rgb(221, 151, 22);
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #737373;
+}
+.footer-links.inline li {
+  display: inline-block;
+}
+.site-footer .social-icons {
+  text-align: right;
+}
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+.copyright-text {
+  margin: 0;
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+}
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+.social-icons a.instagram:hover {
+  background-color: rgb(221, 151, 22);
+}
+
+/* ----------------------------------------------------------------------media queries */
+
+@media screen and (max-width: 400px) {
+  .navbar-dark .navbar-brand {
+    font-size: medium;
+  }
+  p {
+    font-size: small;
+  }
+}
+
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+  /* nav */
+  #videos,
+  #fotos,
+  #michael,
+  #opdrachtgevers,
+  #prijzen,
+  #contact {
+    scroll-margin-top: 356px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+
+/* ----------------------------------------------------------------------------------contact-form */
+
+.contact-clean {
+  padding: 80px 0;
+}
+
+@media (max-width: 767px) {
   .contact-clean {
-      padding: 20px 0
+    padding: 20px 0;
   }
 }
 
@@ -57,12 +306,12 @@ body{
   padding: 40px;
   border-radius: 4px;
   color: #505e6c;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .contact-clean form {
-      padding: 30px
+    padding: 30px;
   }
 }
 
@@ -71,11 +320,11 @@ body{
   font-weight: bold;
   font-size: 28px;
   margin-bottom: 36px;
-  color: inherit
+  color: inherit;
 }
 
 .contact-clean .form-group:last-child {
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 
 .contact-clean form .form-control {
@@ -85,11 +334,11 @@ body{
   outline: none;
   color: inherit;
   padding-left: 12px;
-  height: 42px
+  height: 42px;
 }
 
 .contact-clean form .form-control:focus {
-  border: 1px solid #b2b2b2
+  border: 1px solid #b2b2b2;
 }
 
 .contact-clean form textarea.form-control {
@@ -97,7 +346,7 @@ body{
   max-height: 260px;
   padding-top: 10px;
   resize: vertical;
-  resize: none
+  resize: none;
 }
 
 .contact-clean form .btn {
@@ -112,284 +361,31 @@ body{
   font-size: 13px;
   letter-spacing: 0.4px;
   line-height: 1;
-  outline: none !important
+  outline: none !important;
 }
 
 .contact-clean form .btn:hover {
-  opacity: 1
+  opacity: 1;
 }
 
 .contact-clean form .btn:active {
-  transform: translateY(1px)
+  transform: translateY(1px);
 }
 
 .contact-clean form .btn-primary {
   background-color: #000000;
   margin-top: 15px;
-  color: #fff
+  color: #fff;
 }
 /* text */
-.nav-item .navlink.active{
-    text-decoration: underline;
+.nav-item .navlink.active {
+  text-decoration: underline;
 }
 
-.links{
-    color: rgb(221, 151, 22);
+.links {
+  color: rgb(221, 151, 22);
 }
 
-.links:hover{
-    color: rgb(219, 177, 98);
+.links:hover {
+  color: rgb(219, 177, 98);
 }
-
-/* hero section */
-.hero-image{
-    max-height: 100vh;
-    object-fit: cover;
-    object-position: center;
-}
-
-.carousel-inner .carousel-item{
-    position: relative;
-    text-align: left;
-}
-
-.title-wrapper{
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.hero-text{
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-}
-
-/* colors */
-
-.bg-dark-grey{
-    background-color: rgb(37, 37, 37);
-}
-
-.icon-card{
-  height: 100%;
-}
-
-.bg-lighter-grey{
-  background-color: rgba(58, 58, 58);
-}
-
-/* video section */
-
-.video-container{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-
-.video-iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* michael section */
-
-.piano-background-image{
-    background-size: cover;
-    background-image: url("../images/Mikes_Pianoshow _keyboards.webp"), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* testimonial section */
-
-.testimonial-image{
-  position: relative;
-  border-radius: 100%;
-  object-fit: cover;
-  width: 30vw;
-  height: 30vw;
-  max-width: 300px;
-  max-height: 300px;
-  left: 50%;
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* footer */
-
-.site-footer
-{
-background-color: rgb(31, 31, 31);
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
-  border-top: blanchedalmond;
-}
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
-}
-
-.site-footer h6
-{
-  color:#737373;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-
-.site-footer a
-{
-  color:#737373;
-}
-.site-footer a:hover
-{
-  color:rgb(221, 151, 22);
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
-}
-.copyright-text
-{
-  margin:0
-}
-
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-}
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
-}
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
-}
-.social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
-}
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-}
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
-}
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
-}
-.social-icons a.instagram:hover
-{
-  background-color: rgb(221, 151, 22);
-}
-
-/* media queries */
-
-@media screen and (max-width: 400px) {
-    .navbar-dark .navbar-brand{
-        font-size: medium;
-    }
-    p{
-        font-size: small;
-    }
-  }
-
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-    /* nav */
-  #videos, #fotos, #michael, #opdrachtgevers, #prijzen, #contact{
-    scroll-margin-top: 356px;
-  }
-
-}
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
-
-  @media (max-width:767px)
-  {
-    .social-icons li.title
-    {
-      display:block;
-      margin-right:0;
-      font-weight:600
-    }
-  }
-  
