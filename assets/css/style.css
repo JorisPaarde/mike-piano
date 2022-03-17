@@ -11,6 +11,7 @@ body {
 #fotos,
 #michael,
 #opdrachtgevers,
+#bruiloften,
 #prijzen,
 #contact {
   scroll-margin-top: 76px;
@@ -111,7 +112,7 @@ body {
 
 /* ----------------------------------------------------------------------michael section */
 
-.piano-background-image {
+.michael-sectie.background-image {
   background-size: cover;
   background-image: url("../images/landscape/Mike_s_Pianoshow_HR_close_up_keyboards.webp"),
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
@@ -119,7 +120,19 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+/* ----------------------------------------------------------------------bruiloft section */
 
+.bruiloft-sectie.background-image {
+  background-size: cover;
+  background-image: url("../images/landscape/pexels-katarzyna-dzierżyńska-trouwfoto.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bruiloft-sectie ul li {
+  font-size: small;
+}
 /* ------------------------------------------------------------------testimonial section */
 
 .testimonial-image {
@@ -263,9 +276,10 @@ body {
   #fotos,
   #michael,
   #opdrachtgevers,
+  #bruiloften,
   #prijzen,
   #contact {
-    scroll-margin-top: 356px;
+    scroll-margin-top: 390px;
   }
 }
 @media (max-width: 767px) {
