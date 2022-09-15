@@ -148,11 +148,14 @@ body {
   transform: translateX(-50%);
 }
 
+.carousel-item .testimonial-text{
+  min-height: 200px;
+}
+
 /* -----------------------------------------------------------------------------footer */
 
 .site-footer {
   background-color: rgb(31, 31, 31);
-  padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
   color: #737373;
