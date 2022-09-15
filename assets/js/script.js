@@ -1,17 +1,17 @@
-// const navLinks = document.querySelectorAll(".nav-item");
-// const menuToggle = document.getElementById("navbarNav");
-// const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
+const navLinks = document.querySelectorAll(".nav-item");
+const menuToggle = document.getElementById("navbarNav");
+const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
 
-// navLinks.forEach((l) => {
-//   l.addEventListener("click", () => {
-//     bsCollapse.toggle();
-//   });
-// });
+navLinks.forEach((l) => {
+  l.addEventListener("click", () => {
+    bsCollapse.toggle();
+  });
+});
 
-// var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-//   target: "#navbarNav",
-//   offset: 200,
-// });
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: "#navbarNav",
+  offset: 200,
+});
 
 function init() {
   var vidDefer = document.getElementsByTagName("iframe");
