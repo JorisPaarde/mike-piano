@@ -22,28 +22,42 @@
 
         gtag('config', 'AW-1009342547');
     </script>
+    <script defer>
+        window.addEventListener('load', function () {
+            const conversionFunc = (event) => {
+                console.log(event)
+                gtag('event', 'conversion', {
+                    send_to: 'AW-1009342547/zEGWCNOtwa0DENOwpeED',
+                });
+                // event.preventDefault();
+            };
+
+            const LNK_CONTACT = document.querySelector('.contact-link');
+            LNK_CONTACT.addEventListener('click', conversionFunc);
+        });
+    </script>
 
     <!-- HTML Meta Tags -->
     <meta name="description"
-        content="Deze leuke band heeft interactie met het publiek als geen ander. Uw gasten kunnen verzoekjes indienen, meezingen en dansen.">
+        content="Neem contact op met deze leuke band, interactie met het publiek als geen ander. Uw gasten kunnen verzoekjes indienen, meezingen en dansen.">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="mikespianoshow.com">
     <meta property="twitter:url" content="https://mikespianoshow.com/">
-    <meta name="twitter:title" content="Mike's Pianoshow De band met interactie op elk feest.">
+    <meta name="twitter:title" content="Mike's Pianoshow contact pagina">
     <meta name="twitter:description"
-        content="Deze leuke band heeft interactie met het publiek als geen ander. Uw gasten kunnen verzoekjes indienen, meezingen en dansen.">
+        content="Neem contact op met deze leuke band, interactie met het publiek als geen ander. Uw gasten kunnen verzoekjes indienen, meezingen en dansen.">
     <meta name="twitter:image"
         content="https://www.mikespianoshow.com/assets/images/Hoofdfoto_mike_s_pianoshow_Michael_Schuurmans_google.png">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Mike's Pianoshow De band met interactie op elk feest.">
+    <meta property="og:title" content="Mike's Pianoshow contact pagina">
     <meta property="og:image"
         content="https://www.mikespianoshow.com/assets/images/Hoofdfoto_mike_s_pianoshow_Michael_Schuurmans_google.png">
     <meta property="og:video" content="https://www.youtube.com/v/KwP1llYtxNI">
     <meta property="og:description"
-        content="Deze leuke band heeft interactie met het publiek als geen ander. Uw gasten kunnen verzoekjes indienen, meezingen en dansen.">
+        content="Neem contact op met deze leuke band, interactie met het publiek als geen ander. Uw gasten kunnen verzoekjes indienen, meezingen en dansen.">
     <meta property="og:url" content="https://www.mikespianoshow.com/">
     <meta property="og:site_name" content="Mike's Pianoshow">
 
@@ -57,11 +71,10 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/72709fc3c4.js" defer crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Mike's Pianoshow De band met interactie op elk feest.</title>
+    <title>Mike's Pianoshow contact pagina</title>
 </head>
 
 <body>
-    <div id="home"></div>
     <!-- navigation menu -->
     <nav class="bg-dark navbar navbar-expand-lg sticky-top navbar-dark">
         <div class="container-fluid">
@@ -95,28 +108,65 @@
             </div>
         </div>
     </nav>
-    <!-- contact form -->
     <div class="container justify-content-center">
-        <div class="col-12 col-md-6 offset-md-3 offset-0">
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-b0861ab3-919b-4110-a1aa-37848ff4ff9f"></div>
-            <!-- <div class="contact-clean">
-                <form onsubmit="return false;">
-                    <h2 class="text-center">Contact us</h2>
-                    <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name">
-                    </div>
-                    <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email">
-                    </div>
-                    <div class="form-group"><textarea class="form-control" name="message" placeholder="Message"
-                            rows="14"></textarea></div>
-                    <div class="form-group text-center"><button class="btn btn-primary" type="submit">send </button>
-                    </div>
-                </form>
-            </div> -->
+        <!-- <div class="row">
+                    <h1 class="text-center text-light">Contact pagina</h1>
+                </div> -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-8">
+                <img class="w-100" src="assets/images/landscape/Mike_s_Pianoshow_HR_hoofdfoto.webp"
+                    alt="Mike's Pianoshow hoofdfoto">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div class="row">
+                    <section class="text-light pt-4">
+                        <h5 class="text-center">Rechts op de foto in het grijze pak zie je Randolph.
+                            Randolph helpt ons met het afhandelen van de boekingen.</h5>
+                        <p class="text-center">Je kan het beste: <br><br> Randolph bellen of whatsappen op:
+                            <span><a class="links contact-link" href="tel:0031619379320">06-19379320</a></span><br><br>
+                            En als tweede alternatief Michael op: <span><a class="links contact-link"
+                                    href="tel:0031626465432">06-26465432</a></span><br><br>
+                            Of mail naar: <span><a class="links contact-link mb-4"
+                                    href="mailto:info@mikespianoshow.com">info@mikespianoshow.com</a></span><br><br>
+                        <h5>Voor een snelle offerte is het handig als we de volgende dingen weten:</h5>
+                        <p>
+                            Welke datum gaat het om?<br>
+                            Waar is het feestje?<br>
+                            Hoeveel mensen komen er?<br>
+                            Wat is de gelegenheid van het feestje?<br>
+                            Wat is je telefoonnummer?<br></p>
+                        <p>
+                            We nemen dan even kort telefonisch contact met je op zo snel mogelijk en brengen
+                            daarna een
+                            offerte op maat
+                            uit. De prijzen verschillen erg ivm hoogseizoenen en reisafstanden, maar zo weet je
+                            dat je
+                            een eerlijke offerte
+                            krijgt die past bij wat je op jouw feest wilt neerzetten en nodig hebt.<br>
+                            Ook voor de kleinere budgetten hebben we goede alternatieven en een groot en vooral
+                            actueel
+                            netwerk van
+                            piano-entertainers, of verzoekjes-acts. We checken vrijblijvend beschikbaarheid bij
+                            collega’s en doen dan een
+                            aanbod voor piano-entertainment of een leuke band die past op jouw feest en bij jouw
+                            budget.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-8">
+                <img class="w-100"
+                    src="assets/images/landscape/Mike_s_Pianoshow_bandfoto_4mansformatie_basisbezetting.webp"
+                    alt="Mike's Pianoshow band 4 mans formatie" loading="lazy">
+            </div>
         </div>
     </div>
-     <!-- Site footer -->
-     <footer class="site-footer">
+    <!-- Site footer -->
+    <footer class="site-footer">
         <hr>
         <div class="container">
             <div class="row justify-content-between">
